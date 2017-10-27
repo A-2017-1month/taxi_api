@@ -5,12 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index   = require('./routes/index');
-var users   = require('./routes/users');
 var tasks   = require('./routes/tasks');
-var offices = require('./routes/offices');
-var lawyers = require('./routes/lawyers');
-var chats   = require('./routes/chats');
 var teapot  = require('./routes/teapot');
 
 var app = express();
@@ -36,11 +31,7 @@ app.use(function(req, res, next) {
 });
 
 app.use('/teapot', teapot);
-app.use('/users', users);
 app.use('/tasks', tasks);
-app.use('/offices', offices);
-app.use('/lawyers', lawyers);
-app.use('/chats', chats);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

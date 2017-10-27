@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@google/maps": "^0.4.5",
     "async": "^2.5.0",
     "body-parser": "~1.17.1",
     "cfenv": "^1.0.4",
